@@ -1,7 +1,7 @@
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5,FaCss3, FaBootstrap, FaGitAlt,FaGithub,FaDocker } from "react-icons/fa";
-import { RiReactjsFill,RiTailwindCssFill,RiNodejsFill } from "react-icons/ri";
-import { SiExpress,SiMysql, SiMongodb, SiSocketdotio,SiPostman } from "react-icons/si";
+import { RiReactjsFill,RiTailwindCssFill,RiNodejsFill,RiVercelFill } from "react-icons/ri";
+import { SiExpress,SiMysql, SiMongodb, SiSocketdotio,SiPostman,SiRender } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { motion } from "framer-motion";
 import Round from "./ui/Round";
@@ -23,8 +23,9 @@ const Skills = () => {
                 {name:"React.js",icon:<RiReactjsFill size={20} className="text-cyan-500" />},
                 {name:"HTML",icon:<FaHtml5 size={20} className="text-orange-500" />},
                 {name:"CSS",icon:<FaCss3 size={20} className="text-blue-500" />},
-                {name:"Tailwind CSS",icon:<RiTailwindCssFill size={20} className="text-cyan-500"/>},
-                {name:"Bootstrap",icon:<FaBootstrap size={20} className="text-fuchsia-600" />}
+                {name:"TailwindCSS",icon:<RiTailwindCssFill size={20} className="text-cyan-500"/>},
+                {name:"Bootstrap",icon:<FaBootstrap size={20} className="text-fuchsia-600" />},
+                {name:"Zustand",icon:<img src="/DeviconZustand.png" className="size-6"/>}
             ]
         },
         {
@@ -49,7 +50,9 @@ const Skills = () => {
                 {name:"GitHub",icon:<FaGithub size={20} />},
                 {name:"Docker",icon:<FaDocker size={20} className="text-blue-600"/>},
                 {name:"Postman",icon:<SiPostman size={20} className="text-orange-500" />},
-                {name:"VS Code",icon:<VscVscode size={20} className="text-blue-600" />}
+                {name:"VS Code",icon:<VscVscode size={20} className="text-blue-600" />},
+                {name:"Vercel",icon:<RiVercelFill size={20} />},
+                {name:"Render",icon:<SiRender size={20} />}
             ]
         },
 

@@ -41,7 +41,7 @@ const sendEmail = (e) => {
     <div className="max-w-4xl mx-auto px-2">
     <h1 className='text-3xl font-bold px-3 py-5'>Contact</h1>
     <div className="flex sm:flex-row gap-32 flex-col pb-14">
-        <div className="flex flex-col gap-5 p-3" >
+        <div className="flex flex-col gap-4 p-3" >
           <h3 className="text-xl font-bold pb-2">Get In Touch</h3>
             <div className="flex gap-3 items-center">
               <div className="size-10 rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center"><Mail size={15}/></div>
@@ -80,21 +80,26 @@ const sendEmail = (e) => {
               <div className="flex flex-col gap-3">
                 <label htmlFor="name1">Name</label>
                 <input
-                className=" h-9 w-full border border-gray-400 rounded focus:ring-2 focus:ring-gray-400"
-                type="text" name="name"  id="name1" />
+                className=" h-9 px-2 w-full border border-gray-400 rounded focus:ring-2 focus:ring-gray-400"
+                type="text"
+                placeholder="Your name" 
+                name="name"  id="name1" />
               </div>
               <div className="flex flex-col gap-3">
                 <label htmlFor="email1">Email</label>
                 <input
-                className=" h-9 w-full border border-gray-400 rounded focus:ring-2 focus:ring-gray-400"
-                type="email" name="email"  id="email1" />
+                className=" h-9 px-2  w-full border border-gray-400 rounded focus:ring-2 focus:ring-gray-400"
+                type="email" 
+                placeholder="Your email"
+                name="email"  id="email1" />
               </div>
             </div>
             <div className="flex flex-col gap-3">
             <label htmlFor="message1">Message</label>
             <textarea rows={4}
-            className=" w-full border border-gray-400 rounded focus:ring-2 focus:ring-gray-400"
-            name="message" id="message1"></textarea>
+            className=" w-full px-2  border border-gray-400 rounded focus:ring-2 focus:ring-gray-400"
+            name="message"
+            placeholder="Your message" id="message1"></textarea>
             <button
             className=" py-1.5 w-full bg-black text-white dark:bg-white dark:text-black rounded" 
             type="submit">Submit</button>

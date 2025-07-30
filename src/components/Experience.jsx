@@ -34,7 +34,7 @@ return (
     initial={{opacity:0,y:20}}
     animate={{opacity:1,y:0}}
     transition={{duration:0.4}}
-    className='max-w-4xl mx-auto px-2'>
+    className='max-w-4xl mx-auto px-3'>
     <h1 className='text-3xl font-bold px-2 py-5'>Experience</h1>
     <div className='space-y-10 pt-6'>
         {experiences.map((exp,idx)=>(
@@ -53,20 +53,20 @@ return (
                 <p className='text-gray-500 text-xs sm:text-[13px] py-1 sm:py-0 font-bold flex items-center'>{exp.period}</p>
             </div>
 
-            <ul className='list-disc pl-7 space-y-2'>
+            <ul className='list-disc px-6 space-y-2'>
                 {exp.responsibilities.map((resp,idx)=>(
                     <motion.li
                     initial={{opacity:0,y:20}}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: idx * 0.3 }}
+                    transition={{ duration: 0.5, delay: idx * 0.2 }}
                     key={idx} className='text-sm'>
                     {resp}
                     </motion.li>
                 ))}
             </ul>
 
-            <div className='flex flex-wrap gap-2 pl-2'>
+            <div className='flex flex-wrap gap-3 px-2 py-5'>
             {exp.skills.map((skill,idx)=>(
                 <Badge key={idx}>
                 {skill}

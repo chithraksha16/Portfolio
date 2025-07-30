@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { RiReactjsFill,RiTailwindCssFill,RiNodejsFill } from "react-icons/ri";
@@ -7,22 +6,22 @@ import { Mail,MapPin,Download,Github,Linkedin } from 'lucide-react'
 const About = () => {
   return (
     <>
-    <section id='about'  className='w-full pt-[130px] pb-10  bg-white text-black dark:bg-black dark:text-white '>
-        <div className='md:max-w-4xl flex mx-auto px-4 flex-wrap w-full'>
+    <section id='about'  className='w-full pt-[110px] pb-10  bg-white text-black dark:bg-black dark:text-white '>
+        <div className='sm:max-w-4xl flex mx-auto px-4 flex-wrap justify-center gap-3 w-full'>
         <motion.div
         initial={{opacity:0,y:20}}
         animate={{opacity:1,y:0}}
-        transition={{duration:1.5,delay:0.2}}
-        className='sm:px-0 px-5'>
+        transition={{duration:1,delay:0.2}}
+        >
         <div className='p-2'>
-            <h1 className=' text-3xl sm:text-4xl font-bold '>Chithraksha</h1>
+            <h1 className='text-3xl sm:text-4xl font-bold '>Chithraksha</h1>
             <h4 className='pt-3 text-lg sm:text-[20px] font-semibold text-gray-500'>Full-Stack Developer</h4>
         </div>
-        <div className='flex gap-3 md:px-2 py-4 sm:text-sm text-xs px-1'>
-            <a href='mailto:chithrakshakharvi@gmail.com'  className='flex items-center text-gray-500 gap-1'><Mail size={15}/>chithrakshakharvi@gmail.com</a>
-            <div className='flex items-center text-gray-500 gap-1'><MapPin size={15}/>Karnataka,India</div>
+        <div className='flex gap-3 sm:px-2 py-4 sm:text-sm text-xs px-1'>
+            <a href='mailto:chithrakshakharvi@gmail.com'  className='flex items-center text-gray-500 gap-1'><Mail size={13}/>chithrakshakharvi@gmail.com</a>
+            <div className='flex items-center text-gray-500 gap-1'><MapPin size={13}/>Karnataka,India</div>
         </div>
-        <div className='md:w-xl text-[17px] text-gray-500 px-2'>
+        <div className='sm:w-xl w-full sm:text-[17px] text-base text-gray-500 px-2'>
         <p>A dedicated full stack developer with experience developing web applications using modern tools like React, Node.js, and more. Focused on delivering user-centric solutions that enhance performance and engagement.</p>
         </div>
         <div className='px-2 py-8 flex gap-2'>
@@ -31,34 +30,34 @@ const About = () => {
         target="_blank"
         /* todo: add download attribute... */
         >
-        <button  className=' px-3 py-1.5 text-xs sm:text-sm flex items-center border border-gray-600 rounded bg-black text-white dark:bg-white dark:text-black'>
+        <button  className=' px-2.5 py-1.5 text-xs sm:text-sm flex items-center border border-gray-600 rounded bg-black text-white dark:bg-white dark:text-black'>
         <Download className="mr-2 h-3 w-3 sm:h-4 sm:w-4" /> Resume
         </button>
         </Link>
 
         <Link>
-        <button className='px-2 py-2 border border-gray-600 rounded'>
+        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-900'>
             <Github className="h-3 w-3 sm:h-4 sm:w-4" />
         </button>
         </Link>
 
         <Link>
-        <button className='px-2 py-2 border border-gray-600 rounded'>
+        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-900'>
             <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
         </button>
         </Link>
 
         <Link>
-        <button className='px-2 py-2 border border-gray-600 rounded'>
+        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-900'>
             <Linkedin  className="h-3 w-3 sm:h-4 sm:w-4" />
         </button>
         </Link>
         </div>
         </motion.div>
 
-        <motion.div>
-        <div className='grid grid-cols-2 gap-8 px-10 ml-5 md:px-0 md:ml-52 sm:ml-40 lg:ml-0 '>
-
+        <motion.div
+        className='flex flex-col items-center justify-between lg:flex-row'>
+        <div className='grid grid-cols-2 gap-8 px-5  md:px-0 sm:ml-1  '>
             <motion.div
             initial={{x:100,y:80}}
             animate={{y:0,x:0}}
@@ -163,8 +162,8 @@ const About = () => {
                 ease:"easeInOut"
                 },
                 boxShadow:{
-                     duration: 4,
-                  repeat: Infinity
+                    duration: 4,
+                    repeat: Infinity
                 }
             }}
             className='bg-gray-200 dark:bg-gray-800 flex items-center flex-col rounded p-1'>

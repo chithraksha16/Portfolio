@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import  { useEffect, useState } from 'react'
 import { Sun,Moon,Menu,X } from 'lucide-react'
 const Navbar = () => {
     const [toggleDark,setToggledark]=useState(false)
@@ -47,12 +46,12 @@ const toggleTheme = () => {
   return (
     <>
     <header >
-        <div className={`w-full h-16 fixed z-50 top-0 text-black dark:text-white ${isScroll ? "bg-white/95 dark:bg-black/95  backdrop:blur-3xl"  : "bg-white dark:bg-black"}`}>
-        <div className='max-w-4xl mx-auto flex justify-between items-center h-full px-4 '>
+        <div className={`w-full h-16 fixed z-50 top-0 text-black dark:text-white ${isScroll ? "bg-transparent backdrop-blur-2xl"  : "bg-white dark:bg-black"}`}>
+        <div className='max-w-4xl mx-auto flex justify-between items-center h-16 px-4 '>
             <div className='font-bold text-lg px-2'>
                 Chithrax
             </div>
-            <nav className=' hidden md:flex justify-between gap-5 font-medium'>
+            <nav className=' hidden sm:flex justify-between gap-5 font-medium'>
             {navItems.map((item,idx)=>(
             <div key={idx}>
             <a className='hover:text-gray-700' href={item.to}>{item.name}</a>
@@ -62,7 +61,7 @@ const toggleTheme = () => {
                 {toggleDark ? <Sun />:<Moon />}
                 </button>
             </nav>
-            <div className='md:hidden flex gap-2 px-4'>
+            <div className='sm:hidden flex gap-2 px-4'>
                 <button onClick={toggleTheme} >
                 {toggleDark ? <Sun />  :<Moon />}
                 </button>
@@ -72,7 +71,7 @@ const toggleTheme = () => {
         </div>
     </div>
     {isMenu &&(
-            <div className='w-full mt-16 md:hidden fixed z-50 bg-white dark:bg-black dark:text-white flex flex-col justify-between items-center gap-4 font-medium py-5 border-t border-gray-200 dark:border-gray-700 transition-all duration-300 ease-in-out overflow-hidden'>
+            <div className='w-full mt-16 sm:hidden fixed z-50 bg-white dark:bg-black dark:text-white flex flex-col justify-between items-center gap-4 font-medium py-5 border-t border-gray-200 dark:border-gray-700 transition-all duration-300 ease-in-out overflow-hidden'>
             {navItems.map((item,idx)=>(
             <div key={idx}>
             <a className='hover:text-white/80' href={item.to}>{item.name}</a>
