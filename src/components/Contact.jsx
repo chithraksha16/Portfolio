@@ -39,7 +39,7 @@ const sendEmail = (e) => {
   return (
     <section id='contact' className='w-full bg-white text-blac dark:bg-black dark:text-white py-10'>
     <div className="max-w-4xl mx-auto px-2">
-    <h1 className='text-3xl font-bold px-3 py-5'>Contact</h1>
+    <h1 className='text-3xl font-bold px-3 py-5'>Contact Me</h1>
     <div className="flex sm:flex-row gap-32 flex-col pb-14">
         <div className="flex flex-col gap-4 p-3" >
           <h3 className="text-xl font-bold pb-2">Get In Touch</h3>
