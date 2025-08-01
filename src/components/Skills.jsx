@@ -1,7 +1,7 @@
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5,FaCss3, FaBootstrap, FaGitAlt,FaGithub,FaDocker } from "react-icons/fa";
 import { RiReactjsFill,RiTailwindCssFill,RiNodejsFill,RiVercelFill } from "react-icons/ri";
-import { SiExpress,SiMysql, SiMongodb, SiSocketdotio,SiPostman,SiRender } from "react-icons/si";
+import { SiExpress,SiMysql, SiMongodb, SiSocketdotio,SiPostman,SiRender,SiTypescript } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { motion } from "framer-motion";
 import Round from "./ui/Round";
@@ -20,6 +20,7 @@ const Skills = () => {
             title:"Front End",
             skills:[
                 {name:"Javascript",icon:<IoLogoJavascript size={20} className="text-yellow-300 bg-black" />},
+                {name:"Typescript",icon:<SiTypescript size={20} className="text-blue-600"  />},
                 {name:"React.js",icon:<RiReactjsFill size={20} className="text-cyan-500" />},
                 {name:"HTML",icon:<FaHtml5 size={20} className="text-orange-500" />},
                 {name:"CSS",icon:<FaCss3 size={20} className="text-blue-500" />},
@@ -31,6 +32,7 @@ const Skills = () => {
         {
             title:"Back End",
             skills:[
+                {name:"Typescript",icon:<SiTypescript size={20} className="text-blue-600"  />},
                 {name:"Node.js",icon:<RiNodejsFill size={20} className="text-green-600"/>},
                 {name:"Express.js",icon:<div className="bg-white p-1 rounded"><SiExpress className="text-black" /></div>},
                 {name:"Socket.io",icon:<SiSocketdotio size={20} />}
