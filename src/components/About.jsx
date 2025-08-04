@@ -35,20 +35,21 @@ const About = () => {
         </button>
         </Link>
 
-        <Link>
-        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-900'>
+        <Link to={'https://github.com/chithraksha16'}
+        target='_blank'>
+        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-500'>
             <Github className="h-3 w-3 sm:h-4 sm:w-4" />
         </button>
         </Link>
 
-        <Link>
-        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-900'>
+        <Link to={'mailto:chithrakshakharvi@gmail.com'}>
+        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-500'>
             <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
         </button>
         </Link>
 
-        <Link>
-        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-900'>
+        <Link to={'https://www.linkedin.com/in/chithraksha'} target='_blank'>
+        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-500'>
             <Linkedin  className="h-3 w-3 sm:h-4 sm:w-4" />
         </button>
         </Link>

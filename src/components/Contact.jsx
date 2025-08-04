@@ -20,10 +20,10 @@ const sendEmail = (e) => {
   
 
     emailjs.sendForm(
-      'service_c7bpyzq',        
-      'template_g0fqu3d',       
-      formRef.current,
-      'KtumzxJawtmLNyXZj' 
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
     .then((result) => {
         console.log('Email successfully sent!', result.text);
@@ -68,7 +68,7 @@ const sendEmail = (e) => {
               <div className="size-10 rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center"><Linkedin size={15} /></div>
               <div className="flex flex-col">
                 <p className="text-gray-400">LinkedIn</p>
-                <a href="mailto:chithrakshakharvi@gmail.com">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/chithraksha/">LinkedIn</a>
               </div>
             </div>
         </div>
