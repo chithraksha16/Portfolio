@@ -101,6 +101,7 @@ const sendEmail = (e) => {
             name="message"
             placeholder="Your message" id="message1"></textarea>
             <button
+            aria-label="submit"
             className=" py-1.5 w-full bg-black text-white dark:bg-white dark:text-black rounded" 
             type="submit">Submit</button>
             </div>

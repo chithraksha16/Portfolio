@@ -105,10 +105,10 @@ const Projects = () => {
                     to={project.demoUrl}
                     target='_blank'
                     >
-                    <button className='px-4 py-1 rounded-md bg-black text-white dark:bg-white dark:text-black flex items-center gap-1 text-sm'> <span className='flex items-center'><RxOpenInNewWindow size={12} /></span> Live</button>
+                    <button aria-label='Open live demo' className='px-4 py-1 rounded-md bg-black text-white dark:bg-white dark:text-black flex items-center gap-1 text-sm'> <span className='flex items-center'><RxOpenInNewWindow size={12} /></span> Live</button>
                     </Link>
                     <Link to={project.githubUrl} target='_blank'>
-                    <button className='px-3 py-1 rounded-md border border-gray-500 flex items-center gap-1 text-sm'> <span className='flex items-center'><FaGithub size={12} /></span>Code</button>
+                    <button  aria-label='View source code' className='px-3 py-1 rounded-md border border-gray-500 flex items-center gap-1 text-sm'> <span className='flex items-center'><FaGithub size={12} /></span>Code</button>
                     </Link>
                   </div>
                   </div>

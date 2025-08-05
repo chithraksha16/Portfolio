@@ -57,15 +57,15 @@ const toggleTheme = () => {
             <a className='hover:text-gray-700' href={item.to}>{item.name}</a>
             </div>
             ))}
-            <button onClick={toggleTheme} className='ml-4' >
+            <button aria-label='Toggle theme' onClick={toggleTheme} className='ml-4' >
                 {toggleDark ? <Sun />:<Moon />}
                 </button>
             </nav>
             <div className='sm:hidden flex gap-2 px-4'>
-                <button onClick={toggleTheme} >
+                <button aria-label='Toggle theme' onClick={toggleTheme} >
                 {toggleDark ? <Sun />  :<Moon />}
                 </button>
-                <button onClick={toggleMenu}>
+                <button aria-label='Toggle menu' onClick={toggleMenu}>
                     {!isMenu ? <Menu /> :<X />}
                     </button></div>
         </div>

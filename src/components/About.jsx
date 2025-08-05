@@ -31,26 +31,26 @@ const About = () => {
         download="Chithraksha_Resume.pdf"
         
         >
-        <button  className=' px-2.5 py-1.5 text-xs sm:text-sm flex items-center border border-gray-600 rounded bg-black text-white dark:bg-white dark:text-black'>
+        <button aria-label='resume'  className=' px-2.5 py-1.5 text-xs sm:text-sm flex items-center border border-gray-600 rounded bg-black text-white dark:bg-white dark:text-black'>
         <Download className="mr-2 h-3 w-3 sm:h-4 sm:w-4" /> Resume
         </button>
         </Link>
 
         <Link to={'https://github.com/chithraksha16'}
         target='_blank'>
-        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-500'>
+        <button aria-label='github' className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-500'>
             <Github className="h-3 w-3 sm:h-4 sm:w-4" />
         </button>
         </Link>
 
         <Link to={'mailto:chithrakshakharvi@gmail.com'}>
-        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-500'>
+        <button aria-label='email' className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-500'>
             <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
         </button>
         </Link>
 
         <Link to={'https://www.linkedin.com/in/chithraksha'} target='_blank'>
-        <button className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-500'>
+        <button aria-label='linkedin' className='px-2 py-2 border border-gray-600 rounded hover:bg-gray-500'>
             <Linkedin  className="h-3 w-3 sm:h-4 sm:w-4" />
         </button>
         </Link>
