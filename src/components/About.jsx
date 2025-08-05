@@ -26,9 +26,10 @@ const About = () => {
         </div>
         <div className='px-2 py-8 flex gap-2'>
         <Link 
-        to={''}
+        to={'/Chithraksha_Resume.pdf'}
         target="_blank"
-        /* todo: add download attribute... */
+        download="Chithraksha_Resume.pdf"
+        
         >
         <button  className=' px-2.5 py-1.5 text-xs sm:text-sm flex items-center border border-gray-600 rounded bg-black text-white dark:bg-white dark:text-black'>
         <Download className="mr-2 h-3 w-3 sm:h-4 sm:w-4" /> Resume
