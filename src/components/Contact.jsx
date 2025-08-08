@@ -68,7 +68,7 @@ const sendEmail = (e) => {
               <div className="size-10 rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center"><Linkedin size={15} /></div>
               <div className="flex flex-col">
                 <p className="text-gray-400">LinkedIn</p>
-                <a href="https://www.linkedin.com/in/chithraksha/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/chithraksha/">linkedin.com/in/chithraksha</a>
               </div>
             </div>
         </div>
