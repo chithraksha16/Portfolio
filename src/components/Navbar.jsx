@@ -1,5 +1,6 @@
 import  { useEffect, useState } from 'react'
 import { Sun,Moon,Menu,X } from 'lucide-react'
+import {motion} from 'framer-motion';
 const Navbar = () => {
     const [toggleDark,setToggledark]=useState(false)
     const [isMenu,setIsMenu]=useState(false)
@@ -74,7 +75,13 @@ const toggleTheme = () => {
             <div className='w-full mt-16 sm:hidden fixed z-50 bg-white dark:bg-black dark:text-white flex flex-col justify-between items-center gap-4 font-medium py-5 border-t border-gray-200 dark:border-gray-700 transition-all duration-300 ease-in-out overflow-hidden'>
             {navItems.map((item,idx)=>(
             <div key={idx}>
-            <a className='hover:text-white/80' href={item.to}>{item.name}</a>
+            <motion.a 
+            initial={{opacity:0 ,y:-10}}
+            whileInView={{opacity:1,y:0}}
+            viewport={{once:true}}
+            transition={{duration:0.3, delay:0.2*idx, ease:"easeOut"}}
+            className='hover:text-white/80' href={item.to}>{item.name}
+            </motion.a>
             </div>
             ))}
             </div>

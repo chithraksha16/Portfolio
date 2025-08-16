@@ -29,6 +29,7 @@ const About = () => {
         href='/Chithraksha_Resume.pdf'
         target="_blank"
         download="Chithraksha_Resume.pdf"
+        onClick={()=>alert("Resume downloading...")}
         
         >
         <button aria-label='resume'  className=' px-2.5 py-1.5 text-xs sm:text-sm flex items-center border border-gray-600 rounded bg-black text-white dark:bg-white dark:text-black'>
