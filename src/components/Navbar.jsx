@@ -1,10 +1,12 @@
 import  { useEffect, useState } from 'react'
 import { Sun,Moon,Menu,X } from 'lucide-react'
 import {motion} from 'framer-motion';
+import CountdownTimer from './ui/CountDown';
 const Navbar = () => {
     const [toggleDark,setToggledark]=useState(false)
     const [isMenu,setIsMenu]=useState(false)
     const [isScroll,setIsScroll]=useState(false)
+    const [close,setClose]=useState(false)
     const navItems=[
         {name:"About",to:"#about"},
         {name:"Experience",to:"#experience"},
@@ -44,10 +46,26 @@ const toggleTheme = () => {
     const toggleMenu=()=>{
         setIsMenu(!isMenu)
     }
+
+    const isClose=()=>{
+        setClose(!close)
+        console.log(close)
+    }
   return (
     <>
     <header >
-        <div className={`w-full h-16 fixed z-50 top-0 text-black dark:text-white ${isScroll ? "bg-transparent backdrop-blur-2xl"  : "bg-white dark:bg-black"}`}>
+        <div  className={`w-full bg-gradient-to-tr from-blue-900 to-fuchsia-600 text-white  py-2 text-sm ${close ? "hidden":"flex"}  justify-between items-center px-8 sm:px-15`}>
+            <div>
+            <h2 className='sm:text-sm text-xs'>Projects Temporary Downtime</h2>
+            <p className='text-xs sm:flex hidden'>The backend of all the projects is currently unavailable and will be restored next month.</p>
+            </div>
+            <div className=' flex gap-5'>
+            {/* todo:ADD header*/}
+            <CountdownTimer/>
+            <button onClick={isClose}><X size={17}/></button>
+            </div>
+        </div>
+        <div className={`w-full h-16 fixed z-50  text-black dark:text-white ${isScroll ? "bg-transparent backdrop-blur-2xl top-0 "  : "bg-white dark:bg-black top-auto"}`}>
         <div className='max-w-4xl mx-auto flex justify-between items-center h-16 px-4 '>
             <div className='font-bold text-lg px-2'>
                 Chithrax
