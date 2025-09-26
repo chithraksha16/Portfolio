@@ -6,7 +6,7 @@ const Experience = () => {
         {
         title:  "Full Stack Developer Intern",
         company: "Zephyr Technologies & Solutions",
-        period: "Mar 2025 - Jun 2025",
+        period: "Feb 2025 - Jun 2025",
         responsibilities: [
         "Developed  dynamic user interfaces using React.js, focusing on performance and reusability.",
         "Developed RESTful APIs with Node.js and Express.js to manage backend logic and server communication.",
