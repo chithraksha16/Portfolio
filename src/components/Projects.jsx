@@ -78,6 +78,7 @@ const Projects = () => {
                 <div className='sm:w-1/2 '>
                 
                   <img src={project.image}
+                  alt='project-image'
                   height={400}
                   width={600}
                   className="w-full h-full object-fill sm:object-cover"

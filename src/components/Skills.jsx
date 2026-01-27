@@ -10,9 +10,9 @@ const Skills = () => {
         {
             title:"Languages",
             skills:[
-                {name:"C",icon:<img src="/DeviconC.png" className="size-6"/>},
+                {name:"C",icon:<img src="/DeviconC.png" alt="C-image" className="size-6"/>},
                 {name:"Javascript",icon:<IoLogoJavascript size={20} className="text-yellow-300 bg-black"  />},
-                {name:"Python",icon:<img src="/DeviconPython.png" className="size-6"/>},
+                {name:"Python",icon:<img src="/DeviconPython.png" alt="Python-image" className="size-6"/>},
                 
             ]
         },
@@ -26,7 +26,7 @@ const Skills = () => {
                 {name:"CSS",icon:<FaCss3 size={20} className="text-blue-500" />},
                 {name:"TailwindCSS",icon:<RiTailwindCssFill size={20} className="text-cyan-500"/>},
                 {name:"Bootstrap",icon:<FaBootstrap size={20} className="text-fuchsia-600" />},
-                {name:"Zustand",icon:<img src="/DeviconZustand.png" className="size-6"/>}
+                {name:"Zustand",icon:<img src="/DeviconZustand.png" alt="Zustand-image" className="size-6"/>}
             ]
         },
         {
